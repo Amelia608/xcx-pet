@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import "./variables";
+
+//设计稿是375的，需要*2
+@function rpx2($rpx) {
+    @return $rpx * 2rpx;
+}
+
+@function rpx($rpx) {
+    @return $rpx * 1rpx;
+}
+
+@function pxrem($rpx) {
+    @return $rpx * 1rpx;
+}
+
+//省略号
+@mixin ellipsis2($lineClamp: 1, $lineHeight: 18) {
+    display: -webkit-box;
+    height: rpx($lineHeight * $lineClamp);
+    overflow: hidden;
+    line-height: rpx($lineHeight);
+    text-overflow: ellipsis;
+    white-space: normal;
+    -webkit-line-clamp: $lineClamp;
+    -webkit-box-orient: vertical;
+}
+
+// 边距、间距工具类生成
+@mixin spacing-gen($spacers, $direction) {
+    @each $prop, $abbrev in (margin: m, padding: p) {
+        // 消除间距，.m0, .p0
+        .#{$abbrev}0 {
+            #{$prop}: 0 !important;
+        }
+
+        @each $size in $spacers {
+            // 不带方向的间距，如 .p1, .p2, .p3 ...; .m1, .m2, .m3 ...
+            .#{$abbrev}#{$size} {
+                #{$prop}: rpx2($size) !important;
+            }
+
+            @each $dir-abbrev, $dir in $direction {
+                // 带方向的间距，如 .pt1, .pr1, .pt2 ...; .mt1, .mr1, .mt2 ...
+                .#{$abbrev}#{$dir-abbrev}#{$size} {
+                    #{$prop}-#{$dir}: rpx2($size) !important;
+                }
+            }
+        }
+    }
+}
+@mixin fontSize($from:9,$to:20) {
+  @for $i from $from through $to {
+    .f#{$i}{
+        font-size: $i*2rpx;
+    }  
+}
+}

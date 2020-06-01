@@ -1,0 +1,45 @@
+@import "../../sass-utils/mix";
+@import "../../sass-utils/placehold";
+@import "../../sass-utils/ui";
+@import "../../sass-utils/mixin";
+
+.page-personal{
+  .iconyoujiantou{
+    font-size:rpx2(11);
+    margin-top: rpx2(1);
+  }
+  .header{
+    height: rpx2(107);
+    padding-left: rpx2(28);
+  }
+  .portrait{
+    width:rpx2(81);
+    height: rpx2(81);
+  }
+  .icon_vip{
+    width: rpx2(16);
+    height: rpx2(16);
+    right: 0;
+    bottom: rpx2(2);
+  }
+  .quick-link{
+    height: rpx2(40);
+    padding: 0 rpx2(15);
+    border-bottom: rpx2(1) solid #E7EAED;
+  }
+  .quick-block{
+    height: rpx2(76);
+    .iconfont{
+      font-size: rpx2(21);
+    }
+  }
+  .link-item{
+    height: rpx2(56);
+    background: #fff;
+    padding: 0 rpx2(15);
+    margin-bottom: rpx2(1);
+    .icon-row{
+      font-size: rpx2(16);
+    }
+  }
+}

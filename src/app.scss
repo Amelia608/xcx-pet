@@ -1,0 +1,165 @@
+@charset "utf-8";
+@import "./sass-utils/mix";
+@import "./sass-utils/icons";
+@import "./sass-utils/ui";
+
+page {
+    color: #000;
+    background: #fff;
+    font-family: "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial,
+        sans-serif;
+    font-size: rpx2(12);
+    vertical-align: baseline;
+}
+// 边距、间距
+// 注：$spacers 列表可调整，但不应太长，以避免生成过多冗余类
+$direction: (
+    t: top,
+    r: right,
+    b: bottom,
+    l: left
+);
+$spacers: 0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 18, 20, 30, 40, 50;
+@include spacing-gen($spacers, $direction);
+$start: 9;
+//字体大小
+$end: 32;
+@include fontSize($start, $end);
+.tc {
+    text-align: center;
+}
+image {
+    display: block;
+}
+.lh20 {
+    line-height: rpx2(20);
+}
+.lh17 {
+    line-height: rpx2(17);
+}
+button::after {
+    border: none;
+}
+.icon-nodata {
+    width: rpx2(150);
+    margin: rpx2(110) auto rpx2(70);
+}
+.ellipsis {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+}
+.ellipsis2 {
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    white-space: normal !important;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.fb {
+    font-weight: bold;
+}
+.dec_line_th {
+    text-decoration: line-through;
+}
+.bd6 {
+    border-radius: rpx2(6);
+}
+text {
+    display: inline-block;
+}
+.ib {
+    display: inline-block;
+}
+
+.flex {
+    display: flex;
+}
+.flex-center {
+    align-items: center;
+}
+.flex-justify-center {
+    justify-content: center;
+}
+.flex-sb {
+    justify-content: space-between;
+}
+.flex-end {
+    justify-content: end;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.flex-1 {
+    flex: 1;
+}
+.bf {
+    background: #fff;
+}
+.cf {
+    color: #fff;
+}
+.vm {
+    vertical-align: middle;
+}
+.pr {
+    position: relative;
+}
+.pa {
+    position: absolute;
+}
+.w0 {
+    width: 0;
+}
+.vh_c {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.round {
+    border-radius: 50%;
+}
+.btn_block_pink {
+    background: #ff5183;
+    color: #fff;
+    height: rpx2(48);
+    line-height: rpx2(48);
+    box-shadow: 0 rpx2(2) rpx2(10) 0 rgba(255, 81, 131, 0.5);
+    border-radius: rpx2(30);
+    &[disabled] {
+        background: #ff5183 !important;
+        color: #fff !important;
+        opacity: 0.6 !important;
+    }
+}
+.g-no-data-btn {
+    margin-top: 60px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 188px;
+    height: 42px;
+    background: rgba(255, 81, 131, 1);
+    box-shadow: 0px 2px 10px 0px rgba(255, 81, 131, 0.5);
+    border-radius: 24px;
+}
+// 暂无数据 icon
+.ui-no-data-icon {
+    padding: rpx2(70) 0 rpx2(40);
+    .iconfont {
+        font-size: rpx2(98);
+    }
+    .btn {
+        margin-top: rpx2(70);
+        width: rpx2(200);
+        height: rpx2(40);
+        line-height: rpx2(40);
+        background: rgba(39, 38, 54, 1);
+        border-radius: rpx2(5);
+    }
+}

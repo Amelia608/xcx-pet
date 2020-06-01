@@ -1,0 +1,56 @@
+@import "../../sass-utils/mix";
+
+@keyframes g-loadings {
+  0% {
+    transform: translate(0);
+  }
+
+  50% {
+    transform: translate(pxrem(20));
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+@keyframes g-loadings2 {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(pxrem(-20));
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+
+.loadings-wrap {
+  text-align: center;
+  color: #aaaaaa;
+  font-size: pxrem(24);
+  .loadings {
+    padding: pxrem(40) 0 0;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    .disc {
+      background: $c1;
+      width: pxrem(20);
+      height: pxrem(20);
+      border-radius: 50%;
+      &.blue {
+        animation: g-loadings 1s 0s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+      }
+      &.black {
+        animation: g-loadings2 1s 0s infinite cubic-bezier(0.85, 0.25, 0.37, 0.85);
+        background: $c2;
+      }
+    }
+  }
+  .text {
+    line-height: pxrem(60);
+  }
+}

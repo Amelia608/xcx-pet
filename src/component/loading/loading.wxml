@@ -1,0 +1,7 @@
+<view class="loadings-wrap">
+    <view class="loadings">
+        <view class="disc blue"></view>
+        <view class="disc black"></view>
+    </view>
+    <view class="text">正在加载更多</view>
+</view>

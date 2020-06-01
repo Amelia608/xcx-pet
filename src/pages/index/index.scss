@@ -1,0 +1,148 @@
+@import "../../sass-utils/mix";
+@import "../../sass-utils/variables";
+.select_store {
+    // background: #F8FAFB;
+    .swiper-item{
+      background-color: #FFF7ED;
+    }
+    .home_header {
+        height: rpx2(254);
+        position: relative;
+        .home_header_img {
+            width: 100%;
+            height: rpx2(254);
+        }
+    }
+    .disc {
+        position: absolute;
+        left:0;
+        bottom: rpx2(10);
+        display: -webkit-box;
+        -webkit-box-align: center;
+        -webkit-box-pack: center;
+        width: 100%;
+        .disc-item {
+            width: rpx(14);
+            height: rpx(14);
+            margin-right: rpx(8);
+            border-radius: 50%;
+            border:rpx2(1) solid $c1;
+            &:last-child {
+                margin-right: 0;
+            }
+            &.active {
+                background: $c1;
+            }
+        }
+    }
+    .nodata{
+        background:#F8FAFB;
+        padding-top: rpx2(60);
+    }
+    .icon-nodata{
+        width: rpx2(150);
+        margin:0 auto rpx2(70);
+     }
+     .quick-block{
+       margin: rpx(35) 0 rpx(25);
+       display: flex;
+       .cell{
+        width: 25%;
+         text-align: center;
+       }
+       .icon{
+         width: 60%;
+         margin: 0 auto;
+       }
+     }
+     .block-tip{
+       background-color: $c1;
+       line-height: rpx(60);
+       color: #fff;
+       margin: 0 rpx(30) rpx(20) rpx(24);
+       box-shadow: rpx(10) rpx(8) rgba(#ebebeb,.5);
+       font-size: rpx(26);
+       position: relative;
+       padding-left: rpx(65);
+       .icon-clock{
+         position: absolute;
+         left: 0;
+         top:rpx(-2);
+         width: rpx(60);
+       }
+     }
+    .store_list_wrap {
+        margin:0 rpx2(15);
+        background-color: #fff;
+        .store_list_content {
+            .cell {
+                padding: rpx2(24) 0 rpx2(20);
+                margin:0 rpx2(15);
+                border-bottom: rpx2(1) solid #E7EAED;
+                .store_info {
+                    flex: 1;
+                    .store_address {
+                        color: #363840; // display: flex;
+                        // align-items: center;
+                        .iconfont {
+                            font-size: rpx2(14);
+                            margin-right: rpx2(6);
+                        }
+                        image {
+                            width: rpx2(13);
+                            height: rpx2(16);
+                            display: inline-block;
+                        }
+                    }
+                    .distance_name {
+                        line-height: rpx2(22);
+                        text{
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        .new {
+                            color: #fff;
+                            background-color: #d69e19;
+                            border-radius: rpx2(2);
+                            padding: 0 rpx2(2);
+                            font-size: rpx2(14);
+                            line-height: rpx2(18);
+                            margin-right: rpx2(6);
+                        }
+                        .name {
+                            max-width: rpx2(150);
+                            font-size: rpx2(16);
+                            margin-right: rpx2(10);
+                            font-weight: 500;
+
+                        }
+                    }
+                    .distance_btn{
+                        font-size: rpx2(12);
+                        border-radius: rpx2(5);
+                        border: rpx2(1) solid #272636;
+                        text-align: center;
+                        height: rpx2(17);
+                        line-height: rpx2(17);
+                        padding: rpx2(4) rpx2(9);
+                    }
+                    .distance_btn_disabled{
+                        border: rpx2(1) solid #E7EAED;
+                        background: #000;
+                        color:#E7EAED;
+                    }
+                }
+            }
+        }
+    }
+    .search_wrap {
+        padding: rpx2(12) rpx2(15);
+        .search_content {
+            border-radius: rpx2(8);
+            background-color: #fff;
+            height: rpx2(36);
+            line-height: rpx2(36);
+            padding: 0 rpx2(15);
+        }
+    }
+}

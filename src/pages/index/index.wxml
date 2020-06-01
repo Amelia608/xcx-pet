@@ -1,0 +1,55 @@
+<view class="select_store">
+<!-- search -->
+  <view class="search_wrap">
+    <view class="search_content flex flex-center">
+      <navigator url="/pages/selectCity/selectCity" hover-class="none">
+        <view class='mr10 flex flex-center'>
+          <text class="mr10">{{cityName}}</text>
+          <text class="iconfont f10 mr10 iconxiala"></text>
+          <text class="iconfont f16 ui-c6 iconsousuo"></text>
+        </view>
+      </navigator>
+      <input class="flex-1" bindinput="bindKeyInput" confirm-type="search" bindconfirm="bindConfirm" value="{{inputValue}}" type="text" placeholder='请输入门店名或关键字' />
+    </view>
+  </view>
+  <!-- banner -->
+  <view class="slide-block">
+    <view class="pr">
+      <swiper class='home_header' autoplay="true" interval="5000" duration="300" bindchange="intervalChange">
+        <block wx:for="{{indexTemplateItemList}}" wx:for-item="slide" wx:for-index="slidId" wx:key="{{slidId}}">
+          <swiper-item bindtap="handleSwiper">
+            <image src="{{slide.imgUrl}}" class="home_header_img" />
+          </swiper-item>
+        </block>
+      </swiper>
+      <view class="disc">
+        <view class="disc-item {{bannerIndex == index ? 'active' : ''}}" wx:for="{{indexTemplateItemList}}" wx:key="{{index}}" data-id="{{index}}"></view>
+      </view>
+    </view>
+  </view>
+  <!-- quick port -->
+  <view class="quick-block">
+    <view class="cell" wx:for="{{quickList}}" wx:key="index">
+       <image src="{{item.icon}}" mode="widthFix" class="icon"  />
+       <view class="">{{item.name}}</view>
+    </view>
+  </view>
+  <view class="block-tip">
+    <image src="../../images/index/icon-clock.png" mode="widthFix" class="icon-clock"  />别着急，请先看看【寻宠技巧】更快找到ta
+  </view>
+  <view class="" hover-class="none" hover-stop-propagation="false">
+    <image src="../../images/index/icon-font.png" mode="widthFix"  style="width:400rpx;margin-left:32rpx"/>
+  </view>
+  <view class="store_list_wrap">
+    <view class="store_list_content">
+      <component-loading wx:if="{{isGetList}}"></component-loading>
+      <view class="ui-no-data" wx:if="{{!isGetList && lists.length > 0}}">没有更多内容了......</view>
+      <!-- </scroll-view> -->
+    </view>
+  </view>
+  <view class="ui-no-data" wx:if="{{!isGetList && lists.length <= 0}}">
+    <view class="nodata">
+      <image class="icon-nodata" src="../../images/nodata.png" mode="widthFix"></image>
+    </view>
+  </view>
+</view>

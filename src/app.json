@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/column/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "color": "#000000",
+    "selectedColor": "#000000",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/icon/icon-home.png",
+        "selectedIconPath": "images/icon/icon-home-on.png"
+      },
+      {
+        "pagePath": "pages/column/index",
+        "text": "启事栏",
+        "iconPath": "images/icon/icon-column.png",
+        "selectedIconPath": "images/icon/icon-column-on.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的主页",
+        "iconPath": "images/icon/icon-my.png",
+        "selectedIconPath": "images/icon/icon-my-on.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "为您提供优质服务"
+    }
+  },
+  "usingComponents": {
+    "component-loading": "/component/loading/loading",
+    "component-copyright": "/component/copyright/copyright"
+  }
+}

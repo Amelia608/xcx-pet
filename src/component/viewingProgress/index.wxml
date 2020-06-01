@@ -1,0 +1,25 @@
+<view class="component_qh_progress">
+  <view class="ui-dialog-bg"></view>
+  <view class="cqp_wrapper">
+    <view class="cqp_container">
+      <view class="cqp_con pr ">
+        <view class="pa cqh_img_con">
+          <image class="cqp_image" src=" {{empInfo.imgUrl|| '../../images/record-img.png'}}" mode="aspectFill"></image>
+        </view>
+        <view class="f14 lh20 tc pt3">{{empInfo.name}}</view>
+        <view class="f12 ui-c6 lh17 mt10">已有{{list.length}}人在等候</view>
+        <block wx:for="{{list}}" wx:key="{{index}}">
+          <view class="flex flex-center mt15" wx:key="{{index}}" wx:if="{{!item.ellipsis}}">
+            <view class="f12 flex-1">{{item.reservationNum || '--'}}</view>
+            <view class="cqp_btn cqp_btn_ing">{{statusArr[item.status]}}</view>
+            <view class="f12 ">预计等待{{item.consumingTime || '--'}}分钟</view>
+          </view>
+          <view class="mt15 f12" wx:else>...</view>
+        </block>
+      </view>
+      <view class="tc cqp_close">
+        <text class="iconfont iconquxiao" bindtap="handleClose"></text>
+      </view>
+    </view>
+  </view>
+</view>

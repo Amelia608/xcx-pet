@@ -1,0 +1,65 @@
+@import "../../sass-utils/mix";
+@import "../../sass-utils/variables";
+.component_qh_cancel{
+    .ui-dialog-bg{
+        background: rgba(0,0,0,0.4);
+    }
+    .nodata{
+        background:#ffffff;
+        padding-top: rpx2(60);
+    }
+    .icon-nodata{
+        width: rpx2(150); 
+        margin:0 auto rpx2(70);
+     }
+    .cqc_wrapper{
+        position: fixed;
+        left: 0;
+        top:0;
+        right:0;
+        bottom:0;
+        z-index: 960;
+        background: transparent;
+        overflow-y: auto;
+    }
+    .cqc_container{
+        padding-top: rpx2(72);
+    }
+    
+    .cqc_con{
+        background: #ffffff;
+        margin:0 rpx2(30) 0 rpx2(30);
+        padding: 0 0 rpx2(34);
+        border-radius: rpx2(6);
+        .cqc_header{
+            padding: rpx2(14) 0;
+            margin-bottom: rpx2(13);
+            text-align: center;
+            border-bottom: rpx2(1) solid #F5F5F5;
+        }
+        .cqc_item{
+            padding: rpx2(10) rpx2(15);
+        }
+        .cqc_btn{
+            background: #F6F8FA;
+            height: rpx2(20);
+            line-height: rpx2(20);
+            font-size:rpx2(10);
+            color: #96989C;
+            padding:0 rpx2(6);
+            margin: 0 rpx2(15) 0 rpx2(10);
+            border-radius: rpx2(3);
+        }
+        .cqc_btn_ing{
+            background: #272636;
+            color:#ffffff;
+        }
+    }
+    .cqc_close{
+        margin: rpx2(18) auto;
+        text{
+            font-size:rpx2(34);
+            color:#ffffff;
+        }
+    }
+}
