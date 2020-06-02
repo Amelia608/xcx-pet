@@ -1,80 +1,24 @@
-<view class="page-personal">
-  <!-- header -->
-  <view class="header flex flex-center bf mb12">
-    <view class="pr">
-      <image class="portrait round" src="{{info.custHeader||'../../images/personal/personer_portrait.png'}}" mode="aspectFill"></image>
-      <image wx:if="{{info.sign=='1'}}" class="icon_vip pa" src="../../images/personal/icon-vip.png" mode="aspectFill"></image>
-    </view>
-    <view class="flex-1 ml5">
-      <view class="name f18 mb12">{{info.cName||'--'}}</view>
-      <view class="number ui-c6 f14">{{info.phone||'--'}}</view>
-    </view>
+<view class="header">
+  <image class="portrait" src="../../images/index/dog.png" mode="aspectFill" />
+  <view class="info">
+    <view class="uname">名字XXX</view>
+    <view class="rz tc">认证志愿者</view>
   </view>
-  <!-- quick port -->
-  <view class="quick-wrap bf mb12">
-    <view class="quick-link flex flex-sb flex-center" data-status="-1" bind:tap="goOrder">
-      <view class="f14">我的订单</view>
-      <view class="flex flex-center ui-c6">
-        <view class="mr3">全部订单</view>
-        <view class="iconfont iconyoujiantou"></view>
-      </view>
-    </view>
-    <view class="quick-block flex flex-center ui-c13 tc">
-      <view class="flex-1" data-status="0" bind:tap="goOrder">
-        <view class="iconfont icondaifuwucopy"></view>
-        <view class="f13 mt8">待服务</view>
-      </view>
-      <view class="flex-1" data-status="1" bind:tap="goOrder">
-        <view class="iconfont iconfuwuzhong"></view>
-        <view class="f13 mt8">服务中</view>
-      </view>
-      <view class="flex-1" data-status="2" bind:tap="goOrder">
-        <view class="iconfont iconyiwancheng"></view>
-        <view class="f13 mt8">已完成</view>
-      </view>
-      <view class="flex-1" data-status="3" bind:tap="goOrder">
-        <view class="iconfont iconyiquxiao"></view>
-        <view class="f13 mt8">已取消</view>
-      </view>
-    </view>
-  </view>
-  <!-- link -->
-  <view class="link-block">
-    <navigator class="link-item flex flex-center flex-sb" url="/pages/card-list/card-list" hover-class="none">
-      <view class="flex flex-center">
-        <view class="iconfont icontaoka icon-row"></view>
-        <view class="ml10 f15">套卡</view>
-      </view>
-      <view class="iconfont iconyoujiantou ui-c6"></view>
+</view>
+<view class="link-wrapper">
+  <view class="link">
+    <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      <image class="icon" src="../../images/personal/11.png" mode="widthFix"></image>
+      <view class="txt">关注</view>
     </navigator>
-    <navigator class="link-item flex flex-center flex-sb" url="/pages/hairstyle-record/hairstyle-record" hover-class="none">
-      <view class="flex flex-center">
-        <view class="iconfont iconjianfarili icon-row"></view>
-        <view class="ml10 f15">剪发日历</view>
-      </view>
-      <view class="iconfont iconyoujiantou ui-c6"></view>
+    <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      <image class="icon" src="../../images/personal/22.png" mode="widthFix"></image>
+      <view class="txt">关注</view>
     </navigator>
-    <navigator class="link-item flex flex-center flex-sb" url="/pages/hairstyle-history-record/hairstyle-history-record" hover-class="none">
-      <view class="flex flex-center">
-        <view class="iconfont iconfaxinglishi icon-row"></view>
-        <view class="ml10 f15">历史发型</view>
-      </view>
-      <view class="iconfont iconyoujiantou ui-c6"></view>
-    </navigator>
-    <view class="link-item flex flex-center flex-sb" bind:tap="invite">
-      <view class="flex flex-center">
-        <view class="iconfont iconyaoqingyouli1 icon-row"></view>
-        <view class="ml10 f15">邀请有礼</view>
-      </view>
-      <view class="iconfont iconyoujiantou ui-c6"></view>
-    </view>
-    <navigator class="link-item flex flex-center flex-sb" url="/pages/personalInfo/personalInfo" hover-class="none">
-      <view class="flex flex-center">
-        <view class="iconfont iconyaoqingyouli icon-row"></view>
-        <view class="ml10 f15">个人档案</view>
-      </view>
-      <view class="iconfont iconyoujiantou ui-c6"></view>
+    <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
+      <image class="icon" src="../../images/personal/33.png" mode="widthFix"></image>
+      <view class="txt">关注</view>
     </navigator>
   </view>
 </view>
-<component-copyright />
+

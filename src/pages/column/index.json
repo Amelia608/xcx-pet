@@ -1,7 +1,3 @@
 {
-  "navigationBarTitleText": "取号订单",
-  "usingComponents": {
-    "component-progress": "/component/viewingProgress/index",
-    "component-cancel": "/component/cancelReson/index"
-  }
+  "navigationBarTitleText": "取号订单"
 }

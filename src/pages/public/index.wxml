@@ -1,0 +1,102 @@
+<view class="page-public">
+  <view class="el-card">
+    <view class="el-title">基本信息</view>
+    <view class="el-card-body">
+      <view class="row-item">
+        <view class="label">爱宠名字：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠品种：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠年龄：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠性别：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">绝育情况：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+    </view>
+  </view>
+  <view class="el-card">
+    <view class="el-title">走失情况</view>
+    <view class="el-card-body">
+      <view class="row-item">
+        <view class="label">爱宠名字：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠品种：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠年龄：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠性别：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">绝育情况：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+    </view>
+  </view>
+  <view class="el-card">
+    <view class="el-title">爱宠照片</view>
+    <view class="el-card-body">
+      <view class="row-item">
+        <view class="label">爱宠名字：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠品种：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠年龄：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠性别：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">绝育情况：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+    </view>
+  </view>
+  <view class="el-card">
+    <view class="el-title">悬赏及联系</view>
+    <view class="el-card-body">
+      <view class="row-item">
+        <view class="label">爱宠名字：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠品种：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠年龄：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">爱宠性别：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+      <view class="row-item">
+        <view class="label">绝育情况：</view>
+        <input class="input weui-input" placeholder="请输入宠物名" />
+      </view>
+    </view>
+  </view>
+</view>

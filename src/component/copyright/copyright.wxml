@@ -1,6 +1,0 @@
-<view class="copyright-container custom-class">
-  <view class="support-tip">
-    <image mode="aspectFill" src="http://xcxsaas.wowkai.cn/logo_grey.png" class="logo"></image>
-    <text>五五美业提供技术支持</text>
-  </view>
-</view>

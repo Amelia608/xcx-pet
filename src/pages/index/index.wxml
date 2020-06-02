@@ -1,51 +1,54 @@
-<view class="select_store">
-<!-- search -->
+<view class="page-index">
+  <!-- search -->
   <view class="search_wrap">
-    <view class="search_content flex flex-center">
-      <navigator url="/pages/selectCity/selectCity" hover-class="none">
-        <view class='mr10 flex flex-center'>
-          <text class="mr10">{{cityName}}</text>
-          <text class="iconfont f10 mr10 iconxiala"></text>
-          <text class="iconfont f16 ui-c6 iconsousuo"></text>
-        </view>
+    <picker class="picker-ele" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+      <view class="picker">当前选择：{{array[index]}}</view>
+    </picker>
+    <view class="input-wrapper">
+      <input class="input" bindinput="bindKeyInput" confirm-type="search" bindconfirm="bindConfirm" value="{{inputValue}}" type="text" placeholder='输入地点/特征关键词' />
+      <navigator class="gosearch tc" target="" url="" hover-class="navigator-hover" open-type="navigate">
+        搜索
       </navigator>
-      <input class="flex-1" bindinput="bindKeyInput" confirm-type="search" bindconfirm="bindConfirm" value="{{inputValue}}" type="text" placeholder='请输入门店名或关键字' />
     </view>
   </view>
   <!-- banner -->
   <view class="slide-block">
     <view class="pr">
       <swiper class='home_header' autoplay="true" interval="5000" duration="300" bindchange="intervalChange">
-        <block wx:for="{{indexTemplateItemList}}" wx:for-item="slide" wx:for-index="slidId" wx:key="{{slidId}}">
+        <block wx:for="{{indexTemplateItemList}}" wx:key="index">
           <swiper-item bindtap="handleSwiper">
-            <image src="{{slide.imgUrl}}" class="home_header_img" />
+            <image src="{{item.imgUrl}}" class="home_header_img" mode="aspectFill" />
           </swiper-item>
         </block>
       </swiper>
       <view class="disc">
-        <view class="disc-item {{bannerIndex == index ? 'active' : ''}}" wx:for="{{indexTemplateItemList}}" wx:key="{{index}}" data-id="{{index}}"></view>
+        <view class="disc-item {{bannerIndex == index ? 'active' : ''}}" wx:for="{{indexTemplateItemList}}" wx:key="index" data-id="{{index}}"></view>
       </view>
     </view>
   </view>
   <!-- quick port -->
   <view class="quick-block">
-    <view class="cell" wx:for="{{quickList}}" wx:key="index">
-       <image src="{{item.icon}}" mode="widthFix" class="icon"  />
-       <view class="">{{item.name}}</view>
-    </view>
+    <navigator class="cell" wx:for="{{quickList}}" wx:key="index" target="" url="{{item.path}}" hover-class="none" open-type="navigate">
+      <image src="{{item.icon}}" mode="widthFix" class="icon" />
+      <view class="">{{item.name}}</view>
+    </navigator>
   </view>
   <view class="block-tip">
-    <image src="../../images/index/icon-clock.png" mode="widthFix" class="icon-clock"  />别着急，请先看看【寻宠技巧】更快找到ta
+    <image src="../../images/index/icon-clock.png" mode="widthFix" class="icon-clock" />
+    别着急，请先看看【寻宠技巧】更快找到ta
   </view>
-  <view class="" hover-class="none" hover-stop-propagation="false">
-    <image src="../../images/index/icon-font.png" mode="widthFix"  style="width:400rpx;margin-left:32rpx"/>
+  <view class="">
+    <image src="../../images/index/icon-font.png" mode="widthFix" style="width:400rpx;margin-left:32rpx" />
   </view>
-  <view class="store_list_wrap">
-    <view class="store_list_content">
-      <component-loading wx:if="{{isGetList}}"></component-loading>
-      <view class="ui-no-data" wx:if="{{!isGetList && lists.length > 0}}">没有更多内容了......</view>
-      <!-- </scroll-view> -->
+  <view class="list-view">
+    <view class="view-item" wx:for="{{lists}}" wx:key="index">
+      <view class="title ellipsis">寻狗启示：柯基，3岁，安静西路 拷贝安静西路 拷贝安静西路 拷贝安静西路 拷贝安静西路 拷贝</view>
+      <view class="distance">距离你152m</view>
+      <view class="time">54分钟前</view>
+      <image class="pet-img" src="../../images/index/dog.png" mode="aspectFill" />
     </view>
+    <component-loading wx:if="{{isGetList}}"></component-loading>
+    <view class="ui-no-data" wx:if="{{!isGetList && lists.length > 0}}">没有更多内容了......</view>
   </view>
   <view class="ui-no-data" wx:if="{{!isGetList && lists.length <= 0}}">
     <view class="nodata">

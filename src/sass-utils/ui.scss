@@ -119,6 +119,10 @@
       color: $c1;
     }
   }
-  .dialog-content {}
+}
+.ellipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 

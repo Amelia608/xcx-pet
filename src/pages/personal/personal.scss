@@ -2,44 +2,45 @@
 @import "../../sass-utils/placehold";
 @import "../../sass-utils/ui";
 @import "../../sass-utils/mixin";
-
-.page-personal{
-  .iconyoujiantou{
-    font-size:rpx2(11);
-    margin-top: rpx2(1);
-  }
-  .header{
-    height: rpx2(107);
-    padding-left: rpx2(28);
-  }
+page{
+  background-color: #F0EFEF;
+}
+.header{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: rpx(50) rpx(80) rpx(115);
   .portrait{
-    width:rpx2(81);
-    height: rpx2(81);
+    width:rpx(85);
+    height: rpx(85);
   }
-  .icon_vip{
-    width: rpx2(16);
-    height: rpx2(16);
-    right: 0;
-    bottom: rpx2(2);
-  }
-  .quick-link{
-    height: rpx2(40);
-    padding: 0 rpx2(15);
-    border-bottom: rpx2(1) solid #E7EAED;
-  }
-  .quick-block{
-    height: rpx2(76);
-    .iconfont{
-      font-size: rpx2(21);
+  .info{
+    margin-left: rpx(30);
+    .uname{
+      font-size: rpx(30);
+      font-weight: bold;
+    }
+    .rz{
+      margin-top: rpx(14);
+      background-color: $c1;
+      line-height: rpx(34);
+      min-width: rpx(150);
     }
   }
-  .link-item{
-    height: rpx2(56);
-    background: #fff;
-    padding: 0 rpx2(15);
-    margin-bottom: rpx2(1);
-    .icon-row{
-      font-size: rpx2(16);
-    }
+}
+.link-wrapper{
+  padding: 0 rpx(81);
+  .link{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 rpx(2) rpx(12) 0 rgba(0,0,0,.1);
+    height: rpx(130);
+    margin-top: rpx(-65);
+  }
+
+  .icon{
+    width: rpx(47);
   }
 }
