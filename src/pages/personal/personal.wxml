@@ -13,12 +13,16 @@
     </navigator>
     <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
       <image class="icon" src="../../images/personal/22.png" mode="widthFix"></image>
-      <view class="txt">关注</view>
+      <view class="txt">收藏</view>
     </navigator>
     <navigator class="" target="" url="" hover-class="navigator-hover" open-type="navigate">
       <image class="icon" src="../../images/personal/33.png" mode="widthFix"></image>
-      <view class="txt">关注</view>
+      <view class="txt">历史</view>
     </navigator>
   </view>
 </view>
-
+<navigator class="link-item" target="" url="" hover-class="navigator-hover" open-type="navigate">我的文章</navigator>
+<navigator class="link-item" target="" url="" hover-class="navigator-hover" open-type="navigate">我的回复</navigator>
+<navigator class="link-item" target="" url="" hover-class="navigator-hover" open-type="navigate">我的转发</navigator>
+<navigator class="link-item mt40" target="" url="" hover-class="navigator-hover" open-type="navigate">志愿者加入我们</navigator>
+<navigator class="link-item" target="" url="" hover-class="navigator-hover" open-type="navigate">优化建议</navigator>

@@ -2,25 +2,25 @@
 @import "../../sass-utils/placehold";
 @import "../../sass-utils/ui";
 @import "../../sass-utils/mixin";
-page{
-  background-color: #F0EFEF;
+page {
+  background-color: #f0efef;
 }
-.header{
+.header {
   background-color: #fff;
   display: flex;
   align-items: center;
   padding: rpx(50) rpx(80) rpx(115);
-  .portrait{
-    width:rpx(85);
+  .portrait {
+    width: rpx(85);
     height: rpx(85);
   }
-  .info{
+  .info {
     margin-left: rpx(30);
-    .uname{
+    .uname {
       font-size: rpx(30);
       font-weight: bold;
     }
-    .rz{
+    .rz {
       margin-top: rpx(14);
       background-color: $c1;
       line-height: rpx(34);
@@ -28,19 +28,31 @@ page{
     }
   }
 }
-.link-wrapper{
+.link-wrapper {
   padding: 0 rpx(81);
-  .link{
+  margin-bottom: rpx(36);
+  .link {
     display: flex;
     background-color: #fff;
     justify-content: space-around;
     align-items: center;
-    box-shadow: 0 rpx(2) rpx(12) 0 rgba(0,0,0,.1);
+    box-shadow: 0 rpx(2) rpx(12) 0 rgba(0, 0, 0, 0.1);
     height: rpx(130);
     margin-top: rpx(-65);
   }
 
-  .icon{
+  .icon {
     width: rpx(47);
+    margin-bottom: rpx(10);
   }
+}
+.link-item {
+  font-size: rpx(30);
+  line-height: rpx(71);
+  border-bottom: rpx(1) solid #CCCBCB;
+  background: #fff;
+  padding-left: rpx(81);
+}
+.mt40{
+  margin-top: rpx(40);
 }
