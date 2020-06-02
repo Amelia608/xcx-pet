@@ -26,3 +26,4 @@
 <navigator class="link-item" target="" url="" hover-class="navigator-hover" open-type="navigate">我的转发</navigator>
 <navigator class="link-item mt40" target="" url="" hover-class="navigator-hover" open-type="navigate">志愿者加入我们</navigator>
 <navigator class="link-item" target="" url="" hover-class="navigator-hover" open-type="navigate">优化建议</navigator>
+<image class="bg-btm" src="../../images/personal/bg3.png" mode="widthFix"/>

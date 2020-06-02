@@ -2,7 +2,8 @@
   <!-- search -->
   <view class="search_wrap">
     <picker class="picker-ele" bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-      <view class="picker">当前选择：{{array[index]}}</view>
+      <view class="picker">{{array[index]}}</view>
+      <image class="icon-arrow" src="../../images/icon/icon-arrow-down.png" mode="widthFix"/>
     </picker>
     <view class="input-wrapper">
       <input class="input" bindinput="bindKeyInput" confirm-type="search" bindconfirm="bindConfirm" value="{{inputValue}}" type="text" placeholder='输入地点/特征关键词' />

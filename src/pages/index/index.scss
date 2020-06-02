@@ -120,10 +120,21 @@
           left: 0;
           top: 50%;
           transform: translateY(-50%);
+          .icon-arrow{
+            width: rpx(15);
+            display: inline-block;
+            margin-left: rpx(15);
+          }
+          .picker{
+            display: inline-block;
+            min-width: rpx(100);
+            max-width: rpx(120);
+          }
         }
         .input{
           border:1px solid $c1;
           flex: 1;
+          padding:0 rpx(10)
         }
         .gosearch{
           width: rpx(93);

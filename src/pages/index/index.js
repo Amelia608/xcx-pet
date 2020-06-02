@@ -16,11 +16,9 @@ Page({
           {name:'寻主启示',icon:'../../images/index/quick3.png',path:'/pages/public/index'},
           {name:'领养活动',icon:'../../images/index/quick4.png',path:'/pages/public/index'},
         ],
-        array: ['美国', '中国', '巴西', '日本'],
+        array: ['浦东新区', '青浦城区', '虹桥世界'],
         lists:[{},{},{},{}],
         bannerIndex: 0,
-        cityName: "",
-        cc_noAuth: true,
         ajax: false,
         isGetList: true,
         height: "",
@@ -30,7 +28,8 @@ Page({
             longitude: ""
         },
         pageNum: 1,
-        pageSize: 20
+        pageSize: 20,
+        index:0
     },
     //options(Object)
     onLoad: function (options) { },
@@ -80,8 +79,8 @@ Page({
         //     }
         // });
     },
-    bindPickerChange(){
-      
+    bindPickerChange({detail:{value}}){
+      this.setData({index:value})
     },
     intervalChange ({ detail }) {
         this.setData({ bannerIndex: detail.current });
