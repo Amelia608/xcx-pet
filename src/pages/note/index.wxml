@@ -1,0 +1,27 @@
+<view class="page-note">
+  <view class="title">寻宠启示</view>
+  <view class="sub ui-c3">让迷路的爱宠早日回家</view>
+  <view class="el-card">
+    <view class="card-t">
+      <image class="icon-foot" src="../../images/icon/icon-foot.png" mode="widthFix" />
+      如何使用“牵绳”寻找爱宠
+    </view>
+    <view class="des">
+      <view>1 上传爱宠信息</view>
+      <view>标注走失位置、时间等重要信息</view>
+      <view>2 分享海报</view>
+      <view>快速推荐给更多好友，微信帮转很重要（可利用 社区业主群等） 同时微博不可少，如有人发现常利用微博搜索关键 词寻找失主</view>
+      <view>3 “牵绳”推送3公里内用户及志愿者，您发布的 信息将展示于“附近丢失”范围</view>
+    </view>
+  </view>
+  <view class="el-card">
+    <view class="card-t">
+      <image class="icon-foot" src="../../images/icon/icon-foot.png" mode="widthFix" />
+      寻宠tips
+    </view>
+    <view class="des">
+      <view>1 悬赏是寻回爱宠避免爱宠受到不法分子伤害的一 大必要措施，建议根据个人情况给予一定悬赏 </view>
+      <view>2 线上寻宠+线下寻找都要进行，周边的宠物店、 宠物医院是必须踩点的，将海报打印或微信发送 给店员，拜托多加留意</view>
+    </view>
+  </view>
+</view>

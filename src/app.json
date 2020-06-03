@@ -3,7 +3,9 @@
     "pages/index/index",
     "pages/personal/personal",
     "pages/column/index",
-    "pages/public/index"
+    "pages/public/index",
+    "pages/note/index",
+    "pages/findmaster/index"
   ],
   "window": {
     "backgroundTextStyle": "dark",

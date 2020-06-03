@@ -1,0 +1,30 @@
+@import "../../sass-utils/mix";
+@import "../../sass-utils/variables";
+.page-note{
+  padding: rpx(20) rpx(80);
+}
+.title{
+  font-size: rpx(60);
+}
+.sub{
+  font-size: rpx(30);
+  margin: rpx(20) 0 rpx(30) 0;
+}
+.el-card{
+  box-shadow: 0 rpx(2) rpx(12) 0 rgba(0, 0, 0, 0.1);
+  padding: rpx(35);
+  margin-bottom: rpx(20);
+  .icon-foot{
+    width: rpx(43);
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: rpx(10);
+  }
+  .card-t{
+    color: $c2;
+    margin-bottom: rpx(20);
+  }
+  .des{
+    line-height: rpx(42);
+  }
+}
