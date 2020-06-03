@@ -24,4 +24,11 @@ Page({
   onReady() {},
 
   onShow: function () {},
+  openMap() {
+    wx.chooseLocation({
+      success: function (res) {
+        console.log(res);
+      },
+    });
+  },
 });

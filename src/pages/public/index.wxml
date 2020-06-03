@@ -8,19 +8,26 @@
       </view>
       <view class="row-item">
         <view class="label">爱宠品种：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">当前选择：{{array[index]}}</view>
+        </picker>
       </view>
       <view class="row-item">
         <view class="label">爱宠年龄：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">当前选择：{{array[index]}}</view>
+        </picker>
       </view>
       <view class="row-item">
         <view class="label">爱宠性别：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+        <view class="radio active">男生</view>
+        <view class="radio">女生</view>
       </view>
       <view class="row-item">
         <view class="label">绝育情况：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+        <view class="radio">已绝育</view>
+        <view class="radio active">未绝育</view>
+        <view class="radio">不确定</view>
       </view>
     </view>
   </view>
@@ -28,75 +35,54 @@
     <view class="el-title">走失情况</view>
     <view class="el-card-body">
       <view class="row-item">
-        <view class="label">爱宠名字：</view>
+        <view class="label">走失地点：</view>
         <input class="input weui-input" placeholder="请输入宠物名" />
       </view>
       <view class="row-item">
-        <view class="label">爱宠品种：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+        <view class="label">走失时间：</view>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="picker">当前选择: {{date}}</view>
+        </picker>
       </view>
-      <view class="row-item">
-        <view class="label">爱宠年龄：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
-      </view>
-      <view class="row-item">
-        <view class="label">爱宠性别：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
-      </view>
-      <view class="row-item">
-        <view class="label">绝育情况：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+      <view>
+        <view class="label">详细描述：</view>
+        <textarea class="des" bindblur="bindTextAreaBlur" auto-height placeholder="请输入描述内容，如：宠物名，性别，年龄，外观特 征，有无背带项圈，事发地点，是否有芯片可扫，监 控查看最后出现点等" />
       </view>
     </view>
   </view>
   <view class="el-card">
     <view class="el-title">爱宠照片</view>
     <view class="el-card-body">
-      <view class="row-item">
-        <view class="label">爱宠名字：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
-      </view>
-      <view class="row-item">
-        <view class="label">爱宠品种：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
-      </view>
-      <view class="row-item">
-        <view class="label">爱宠年龄：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
-      </view>
-      <view class="row-item">
-        <view class="label">爱宠性别：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
-      </view>
-      <view class="row-item">
-        <view class="label">绝育情况：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
-      </view>
+      <view class="tips tip1">建议放表明爱宠特征的照片，如走失时身上有项圈/背带， 可放爱宠佩戴的照片</view>
+    </view>
+    <view class="pet-img-wrapper">
+      <view class="item plus iconfont icon-tianjia"></view>
+      <view class="item plus iconfont icon-tianjia"></view>
     </view>
   </view>
   <view class="el-card">
     <view class="el-title">悬赏及联系</view>
     <view class="el-card-body">
       <view class="row-item">
-        <view class="label">爱宠名字：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+        <view class="label">悬赏金额：</view>
+        <input class="input weui-input" placeholder="请输入悬赏金额：" />
       </view>
       <view class="row-item">
-        <view class="label">爱宠品种：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+        <view class="label">联系人名：</view>
+        <input class="input weui-input" placeholder="请输入联系人名" />
       </view>
       <view class="row-item">
-        <view class="label">爱宠年龄：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+        <view class="label">联系方式：</view>
+        <input class="input weui-input" placeholder="请输入联系方式" />
       </view>
       <view class="row-item">
-        <view class="label">爱宠性别：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+        <view class="label">注意事项：</view>
       </view>
-      <view class="row-item">
-        <view class="label">绝育情况：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+      <view class="tips tip2">
+        我们知道丢失爱宠的您非常焦急，但以上信息请 务必尽可能的填写详细，这样可以为专业的寻宠员、好心的 路人、宠物店、爱心人士一同寻回爱宠。
       </view>
     </view>
   </view>
+  <!-- btn -->
+  <view class="btn" bind:tap="openMap">立即发布</view>
 </view>
