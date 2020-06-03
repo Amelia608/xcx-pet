@@ -38,4 +38,7 @@ function fillZero (value = 0, place = 2) {
   return `${value}`
 }
 
-exports.fillZero = fillZero
+export default{
+  dateFormat,
+  fillZero
+}

@@ -1,3 +1,24 @@
-<view class="" hover-class="none" hover-stop-propagation="false">
-  栏目
+<view class="page-column">
+  <view class="el-card">
+    <view class="title">
+      <text class="t1">寻宠启示：</text>
+      <text class="t2">柯基，3岁，南京西路</text>
+    </view>
+    <view class="ellipsis2">在人民广场西藏南路延安西路路口走丢一条科技，狗狗已经 3岁，完成绝育，走丢时身上没有任何背带和项圈。名字是...</view>
+    <!-- 图片 -->
+    <view class="image-view">
+      <view class="item" wx:for="{{list}}" wx:key="index">
+        <image class="img" src="../../images/index/dog.png" mode="aspectFill"></image>
+      </view>
+    </view>
+    <!-- location -->
+    <view class="vm">
+      <text class="iconfont icon-dingweiweizhizuobiaoxianxing"></text>
+      西藏南路 延安西路
+    </view>
+    <view class="flex flex-sb" hover-class="none" hover-stop-propagation="false">
+      <text class="ui-c3">54分钟前</text>
+      <text class="ui-c3">2492人浏览</text>
+    </view>
+  </view>
 </view>

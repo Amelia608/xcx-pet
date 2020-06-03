@@ -135,19 +135,7 @@ text {
         opacity: 0.6 !important;
     }
 }
-.g-no-data-btn {
-    margin-top: 60px;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 188px;
-    height: 42px;
-    background: rgba(255, 81, 131, 1);
-    box-shadow: 0px 2px 10px 0px rgba(255, 81, 131, 0.5);
-    border-radius: 24px;
-}
+
 // 暂无数据 icon
 .ui-no-data-icon {
     padding: rpx2(70) 0 rpx2(40);
@@ -163,3 +151,4 @@ text {
         border-radius: rpx2(5);
     }
 }
+

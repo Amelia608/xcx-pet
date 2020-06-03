@@ -33,50 +33,7 @@ App({
     tokenIsEnd = false
     const accountInfo = wx.getAccountInfoSync();
     this.globalData.appId = accountInfo.miniProgram.appId;
-    // _this.getToken()
-    wx.onAppRoute((route) => {
-      // 如果没授权头像和昵称，则进行头像和昵称的授权。
-      console.log(route)
-      const pageIndex = [
-        'pages/index/index', // 首页页不检测
-        'pages/order/index', // 个人中心页不检测
-        'pages/personal/personal', // 个人中心页不检测
-      ].indexOf(route.path)
-      // 其他页面都检测
-      if (pageIndex === -1) {
-        const { fullPath } = business.getCurrentPage()
-        // console.log(tokenIsEnd)
-        if (tokenIsEnd) {
-          if (!wx.getStorageSync('ww_mobile')) {
-            wx.redirectTo({
-              url: `/pages/authorization/authorization?refererUrl=${encodeURIComponent(fullPath)}`
-            })
-            return
-          }
-        } else {
-          _this.zTCheck(fullPath)
-        }
 
-      }
-    })
-
-  },
-  zTCheck (fullPath) {
-    let _this = this
-
-    setTimeout(() => {
-      // console.log(tokenIsEnd,!wx.getStorageSync('ww_mobile'),wx.getStorageSync('ww_mobile'))
-      if (tokenIsEnd) {
-        if (!wx.getStorageSync('ww_mobile')) {
-          wx.redirectTo({
-            url: `/pages/authorization/authorization?refererUrl=${encodeURIComponent(fullPath)}`
-          })
-          return
-        }
-      } else {
-        _this.zTCheck(fullPath)
-      }
-    }, 200)
   },
   ajax (options) {
     if (options.url !== '/mall/api/getToken' && !tokenIsEnd) {
@@ -113,13 +70,11 @@ App({
 
         }
         if (data.code == 'S1001') {
-          // console.log(data.msg)
           wx.showToast({ title: data.msg, icon: 'none', duration: 3000 })
         }
         if (data.code == 500 || data.code == 502) {
           wx.showToast({ title: msg || '获取数据失败', icon: 'none', duration: 3000 })
         }
-        // console.log(data)
         success(data);
       };
     }

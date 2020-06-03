@@ -1,5 +1,6 @@
 @import "../../sass-utils/mix";
 @import "../../sass-utils/variables";
+@import "../../sass-utils/ui";
 .page-public {
   padding: rpx(30);
   .el-card {
@@ -22,6 +23,17 @@
     }
   }
 }
+.icon-dingweiweizhizuobiaoxianxing{
+  color: $c1;
+  font-size: rpx(30);
+}
+.icon-shaixuanqixiangxiajiantou {
+  color: $c1;
+  font-size: rpx(16);
+  margin-top:rpx(-2);
+  margin-left: rpx(10);
+  display: inline-block;
+}
 .btn {
   width: rpx(500);
   text-align: center;
@@ -31,58 +43,58 @@
   line-height: rpx(72);
   margin: rpx(100) auto;
 }
-.tips{
+.tips {
   color: #858484;
   font-size: rpx(24);
   line-height: rpx(35);
 }
-.tip1{
+.tip1 {
   margin-top: rpx(11);
   margin-bottom: rpx(30);
 }
-.tip2{
+.tip2 {
   margin-top: rpx(28);
 }
-.des{
+.des {
   margin-top: rpx(10);
   border: rpx(1) solid #000;
   display: block;
-  width:100%;
+  width: 100%;
   padding: rpx(10);
   min-height: rpx(175);
   font-size: rpx(24);
 }
-.radio{
+.radio {
   width: rpx(75);
   color: #858484;
-  &.active{
+  &.active {
     color: #000;
   }
 }
-.radio+.radio{
+.radio + .radio {
   margin-left: rpx(50);
 }
-.weui-input{
-  width:rpx(194);
-  border-bottom: 1px solid #3F3F3F;
+.weui-input {
+  width: rpx(194);
+  border-bottom: 1px solid #3f3f3f;
 }
-.pet-img-wrapper{
+.pet-img-wrapper {
   display: flex;
 }
-.pet-img-wrapper{
-  .iconfont{
+.pet-img-wrapper {
+  .iconfont {
     font-size: rpx(60);
-    color: #A2A1A1;
+    color: #a2a1a1;
   }
-  .plus{
-    border: 1px solid #A2A1A1;
+  .plus {
+    border: 1px solid #a2a1a1;
     text-align: center;
     padding-top: rpx(15);
   }
-  .item{
+  .item {
     width: rpx(105);
     height: rpx(105);
     box-sizing: border-box;
-    margin-right:rpx(20) ;
+    margin-right: rpx(20);
   }
 }

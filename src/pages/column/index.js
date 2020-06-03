@@ -3,7 +3,9 @@ const app = getApp();
 const ApiTakeNum = require("../../api/takeNum");
 
 Page({
-    data: {},
+    data: {
+      list:[{},{},{}]
+    },
     onLoad: function () {
 
     },

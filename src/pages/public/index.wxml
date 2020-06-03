@@ -8,26 +8,35 @@
       </view>
       <view class="row-item">
         <view class="label">爱宠品种：</view>
-        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-          <view class="picker">当前选择：{{array[index]}}</view>
+        <picker bindchange="bindPickerChange" value="{{cateIndex}}" range="{{cate}}" data-name="cateIndex">
+          <view class="picker">
+            <text class="ui-c3" wx:if="{{cateIndex<0}}">请选择</text>
+            <text class="ui-c3" wx:else>{{cate[cateIndex]}}</text>
+            <text class="iconfont icon-shaixuanqixiangxiajiantou" />
+          </view>
         </picker>
       </view>
       <view class="row-item">
         <view class="label">爱宠年龄：</view>
-        <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-          <view class="picker">当前选择：{{array[index]}}</view>
+        <picker bindchange="bindPickerChange" value="{{ageIndex}}" range="{{ages}}" data-name="ageIndex">
+          <view class="picker">
+            <text class="ui-c3" wx:if="{{ageIndex<0}}">请选择</text>
+            <text class="ui-c3" wx:els>{{ages[ageIndex]}}</text>
+            <text class="iconfont icon-shaixuanqixiangxiajiantou" />
+          </view>
         </picker>
       </view>
       <view class="row-item">
         <view class="label">爱宠性别：</view>
-        <view class="radio active">男生</view>
-        <view class="radio">女生</view>
+        <view class="radio {{setIndex===index?'active':''}}" wx:for="{{sexList}}" wx:key="index" bind:tap="RadioChange" data-name="setIndex" data-index="{{index}}">
+          {{item}}
+        </view>
       </view>
       <view class="row-item">
         <view class="label">绝育情况：</view>
-        <view class="radio">已绝育</view>
-        <view class="radio active">未绝育</view>
-        <view class="radio">不确定</view>
+        <view class="radio  {{jyIndex===index?'active':''}}" wx:for="{{jys}}" wx:key="index" bind:tap="RadioChange" data-name="jyIndex" data-index="{{index}}">
+          {{item}}
+        </view>
       </view>
     </view>
   </view>
@@ -36,12 +45,13 @@
     <view class="el-card-body">
       <view class="row-item">
         <view class="label">走失地点：</view>
-        <input class="input weui-input" placeholder="请输入宠物名" />
+        <text class="iconfont icon-dingweiweizhizuobiaoxianxing" />
+        <text class="map" bind:tap="openMap">{{currentLocation||'点击地图定位'}}</text>
       </view>
       <view class="row-item">
         <view class="label">走失时间：</view>
-        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
-          <view class="picker">当前选择: {{date}}</view>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindPickerChange" data-name="date">
+          <view class="picker">{{date}}</view>
         </picker>
       </view>
       <view>
