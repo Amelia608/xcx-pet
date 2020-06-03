@@ -1,6 +1,22 @@
 @import "../../sass-utils/mix";
 @import "../../sass-utils/variables";
 @import "../../sass-utils/ui";
+.cust-icon{
+  display: inline-block;
+  height: rpx(25);
+  width: rpx(25);
+  box-sizing: border-box;
+  background: #E3E2E2;
+  border: rpx(2) solid #E3E2E2;
+  vertical-align: middle;
+  &.active{
+    background: $c1;
+  }
+}
+.tab:first-child{
+  margin-right: rpx(70);
+
+}
 .page-public {
   padding: rpx(30);
   .el-card {

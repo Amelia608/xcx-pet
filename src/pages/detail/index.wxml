@@ -1,0 +1,20 @@
+<view class="" hover-class="none" hover-stop-propagation="false">柯基 东东 2岁 大华新村</view>
+<view class="" hover-class="none" hover-stop-propagation="false">
+  <view class="" hover-class="none" hover-stop-propagation="false">
+    <text>上海 宝山区</text>
+    <text>大华新村</text>
+  </view>
+  <view class="" hover-class="none" hover-stop-propagation="false">
+    2020
+    <text>02.05</text>
+    18:40
+  </view>
+  <view class="" hover-class="none" hover-stop-propagation="false">
+    <image class="" src="" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload=""></image>
+  </view>
+  <view class="" hover-class="none" hover-stop-propagation="false">
+    <view class="" hover-class="none" hover-stop-propagation="false">东东 科技2岁 男 叫东东有反应</view>
+    <view class="" hover-class="none" hover-stop-propagation="false">走时刚洗过澡,脖子带有蓝色项圈</view>
+  </view>
+  
+</view>

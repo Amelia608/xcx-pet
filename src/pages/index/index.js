@@ -12,7 +12,7 @@ Page({
           {name:'发布信息',icon:'../../images/index/quick1.png',path:'/pages/public/index'},
           {name:'寻物启示',icon:'../../images/index/quick2.png',path:'/pages/note/index'},
           {name:'寻主启示',icon:'../../images/index/quick3.png',path:'/pages/public/index'},
-          {name:'领养活动',icon:'../../images/index/quick4.png',path:'/pages/public/index'},
+          {name:'领养活动',icon:'../../images/index/quick4.png',path:'/pages/findmaster/index'},
         ],
         array: ['浦东新区', '青浦城区', '虹桥世界'],
         lists:[{},{},{},{}],
