@@ -1,21 +1,75 @@
 @import "../../sass-utils/mix";
 @import "../../sass-utils/variables";
-.page-column{
-  padding:rpx(20);
+.line {
+  height: rpx(23);
+  border-bottom: rpx(1) dashed #d9d9d9;
 }
-.el-card{
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-top: rpx(-23);
+  .tab {
+    width: rpx(83);
+    line-height: rpx(45);
+    background-color: #ffe0db;
+    text-align: center;
+    & + .tab {
+      margin-left: rpx(5);
+    }
+    &.active {
+      color: #fff;
+      background: $c2;
+    }
+  }
+}
+.filter-wp {
+  display: flex;
+  justify-content: space-around;
+  font-size: rpx(21);
+  margin:rpx(34) 0 rpx(37);
+  .iconfont {
+    font-size: rpx(16);
+    margin-left: rpx(12);
+    color: #7D8198;
+  }
+  .active .iconfont{
+    color: $c1;
+  }
+}
+.f21 {
+  font-size: rpx(21);
+  margin-bottom: rpx(24);
+}
+.f19 {
+  font-size: rpx(19);
+}
+.page-column {
+  padding: rpx(20);
+}
+.el-card {
   box-shadow: 0 rpx(2) rpx(12) 0 rgba(0, 0, 0, 0.1);
   padding: rpx(30);
-  .image-view{
+  margin-bottom: rpx(50);
+  .title {
+    font-size: rpx(30);
+    margin-bottom: rpx(34);
+  }
+  .t1 {
+    color: $c2;
+  }
+  .des {
+    line-height: rpx(48);
+  }
+  .image-view {
     display: flex;
     padding: rpx(32) 0 rpx(10);
-    .item{
+    .item {
       width: rpx(151);
       height: rpx(151);
       margin-right: rpx(7);
       margin-bottom: rpx(10);
     }
-    .img{
+    .img {
       width: 100%;
       height: 100%;
     }

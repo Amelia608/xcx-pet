@@ -1,10 +1,22 @@
 <view class="page-column">
-  <view class="el-card">
+  <view class="line" />
+  <view class="tabs">
+    <view class="tab {{tabIndex===index?'active':''}}" wx:for="{{tabs}}" wx:key="index">
+      {{item.name}}
+    </view>
+  </view>
+  <view class="filter-wp">
+    <view class="{{filterIndex===index?'active':''}}" wx:for="{{filterList}}" wx:key="index">
+      {{item.name}}
+      <text class="iconfont icon-shaixuanqixiangxiajiantou"></text>
+    </view>
+  </view>
+  <view class="el-card" wx:for="{{list}}" wx:key="index">
     <view class="title">
       <text class="t1">寻宠启示：</text>
-      <text class="t2">柯基，3岁，南京西路</text>
+      柯基，3岁，南京西路
     </view>
-    <view class="ellipsis2">在人民广场西藏南路延安西路路口走丢一条科技，狗狗已经 3岁，完成绝育，走丢时身上没有任何背带和项圈。名字是...</view>
+    <view class="ellipsis2 des">在人民广场西藏南路延安西路路口走丢一条科技，狗狗已经 3岁，完成绝育，走丢时身上没有任何背带和项圈。名字是...</view>
     <!-- 图片 -->
     <view class="image-view">
       <view class="item" wx:for="{{list}}" wx:key="index">
@@ -12,13 +24,15 @@
       </view>
     </view>
     <!-- location -->
-    <view class="vm">
+    <view class="vm f21">
       <text class="iconfont icon-dingweiweizhizuobiaoxianxing"></text>
       西藏南路 延安西路
     </view>
-    <view class="flex flex-sb" hover-class="none" hover-stop-propagation="false">
+    <view class="flex flex-sb f19">
       <text class="ui-c3">54分钟前</text>
       <text class="ui-c3">2492人浏览</text>
     </view>
   </view>
+   <component-loading wx:if="{{isGetList}}"></component-loading>
+    <view class="ui-no-data" wx:if="{{!isGetList && list.length > 0}}">没有更多内容了......</view>
 </view>

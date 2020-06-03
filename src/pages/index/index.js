@@ -1,7 +1,5 @@
 //Page Object
 const app = getApp();
-const ApiStore = require("../../api/store");
-const LocUtil = require("../../utils/location");
 let timerId = null;
 Page({
     data: {
