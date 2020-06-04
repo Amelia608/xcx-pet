@@ -1,7 +1,7 @@
 
 
 // 日期时间格式化
-export const dateFormat = (date, fmtExp = 'yy-MM-dd') => {
+ const dateFormat = (date, fmtExp = 'yy-MM-dd') => {
   date = new Date(Number(date))
   const o = {
     'M+': date.getMonth() + 1, // 月份

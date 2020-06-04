@@ -11,20 +11,6 @@ page {
     font-size: rpx2(12);
     vertical-align: baseline;
 }
-// 边距、间距
-// 注：$spacers 列表可调整，但不应太长，以避免生成过多冗余类
-$direction: (
-    t: top,
-    r: right,
-    b: bottom,
-    l: left
-);
-$spacers: 0, 1, 2, 3, 4, 5, 6, 8, 10, 12, 15, 18, 20, 30, 40, 50;
-@include spacing-gen($spacers, $direction);
-$start: 9;
-//字体大小
-$end: 32;
-@include fontSize($start, $end);
 .tc {
     text-align: center;
 }
@@ -122,34 +108,6 @@ text {
 .round {
     border-radius: 50%;
 }
-.btn_block_pink {
-    background: #ff5183;
-    color: #fff;
-    height: rpx2(48);
-    line-height: rpx2(48);
-    box-shadow: 0 rpx2(2) rpx2(10) 0 rgba(255, 81, 131, 0.5);
-    border-radius: rpx2(30);
-    &[disabled] {
-        background: #ff5183 !important;
-        color: #fff !important;
-        opacity: 0.6 !important;
-    }
-}
 
-// 暂无数据 icon
-.ui-no-data-icon {
-    padding: rpx2(70) 0 rpx2(40);
-    .iconfont {
-        font-size: rpx2(98);
-    }
-    .btn {
-        margin-top: rpx2(70);
-        width: rpx2(200);
-        height: rpx2(40);
-        line-height: rpx2(40);
-        background: rgba(39, 38, 54, 1);
-        border-radius: rpx2(5);
-    }
-}
 
 

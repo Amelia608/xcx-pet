@@ -40,7 +40,7 @@
   },
   "permission": {
     "scope.userLocation": {
-      "desc": "为您提供优质服务"
+      "desc": ""
     }
   },
   "usingComponents": {
